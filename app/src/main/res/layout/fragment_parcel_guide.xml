@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    tools:context="th.co.knightfrank.kf_care_android.customer.screens.parcel.guide.ParcelGuideFragment">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_image_content"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/shape_round_circle_orange"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_view_parcel_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/parcel_guide_your_parcel_no"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/text_view_parcel_information_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/text_view_parcel_information_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

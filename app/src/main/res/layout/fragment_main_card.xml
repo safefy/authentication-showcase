@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/relative_layout_dashboard_card_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:gravity="center"
+    android:background="@color/card_announcement_bg">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_dashboard_card_item"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:minHeight="120dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:elevation="3dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/card_all_container">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="14dp">
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_right_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_card_type_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_view_card_type"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_annouce_white" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_view_card_logo"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/logo_kf_white"
+                    android:layout_toRightOf="@+id/linear_layout_card_type_container"
+                    android:layout_toEndOf="@+id/linear_layout_card_type_container" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_detail_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@+id/relative_layout_right_container"
+                android:layout_toStartOf="@+id/relative_layout_right_container"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:id="@+id/text_view_type_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_type_num_rows"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="35 รายการ" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_view_type_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_below="@+id/linear_layout_detail_container" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

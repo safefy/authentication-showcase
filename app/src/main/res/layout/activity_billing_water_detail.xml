@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".customer.screens.billing.water.BillingWaterDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/card_billing_container"
+            app:layout_collapseMode="pin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_toolbar_left_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toStartOf="@id/linear_layout_toolbar_right_container"
+                    android:layout_marginEnd="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/billing_toolbar_title"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/text_view_billing_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/billing_water"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:maxLines="2"
+                        android:ellipsize="end" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_toolbar_right_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentEnd="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="20dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_billing_white" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="30dp"
+                            android:background="@color/white"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/logo_kf_white" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/text_view_created_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="19/12/60"
+                        android:textColor="@color/white"
+                        android:textAlignment="textEnd"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:id="@+id/text_view_is_accepted"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textAlignment="textEnd"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/layout_loading_overlay" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:weightSum="6">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_clock_violet"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/text_view_due_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/billing_due_date"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_weight="5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:weightSum="6">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_document_violet"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="5">
+
+                    <TextView
+                        android:id="@+id/text_view_bill_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/billing_bill_no"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_view_bill_period"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/billing_period"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:weightSum="6">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_home_violet"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/text_view_room_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/room_name"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_weight="5" />
+            </LinearLayout>
+
+            <View
+                style="@style/Separator.Grey"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:weightSum="6">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="5"
+                    android:layout_marginEnd="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/billing_meter_no_before"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_view_billing_meter_before"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1022"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:gravity="end" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:weightSum="6">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="5"
+                    android:layout_marginEnd="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/billing_meter_no_after"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_view_billing_meter_after"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1022"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:gravity="end" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:weightSum="6">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="5"
+                    android:layout_marginEnd="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/billing_water_unit_total"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_view_water_unit_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/billing_water_unit"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:gravity="end" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/Separator.Grey"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:weightSum="6">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="5"
+                    android:layout_marginEnd="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/billing_price_per_unit"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_view_price_per_unit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price_baht"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:gravity="end" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:weightSum="6">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="5"
+                    android:layout_marginEnd="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/billing_price_total"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_view_price_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price_baht"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:gravity="end" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/Separator.Grey"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_show_payment_images_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="20dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/payment_image_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_upload_payment_images_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/text_view_upload_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/billing_payment_upload_image"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout_selected_image1"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/shape_button_round_corner_red_bg_white"
+                    android:layout_margin="10dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/image_view_selected_image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:placeholderImage="@drawable/ic_camera_grey"
+                        app:placeholderImageScaleType="center"
+                        fresco:roundedCornerRadius="8dp" />
+
+                    <ImageView
+                        android:id="@+id/image_view_delete_image1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_cancel_white"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone"
+                        android:padding="10dp"
+                        android:background="@drawable/shape_round_circle_red" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_view_billing_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/billing_status"
+                android:textColor="@color/kf_red"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginTop="20dp" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_paid_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:visibility="visible"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="40dp">
+
+                <Button
+                    android:id="@+id/btn_billing_paid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/billing_paid_btn"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_weight="2"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/shape_button_round_corner_red_bg_red" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

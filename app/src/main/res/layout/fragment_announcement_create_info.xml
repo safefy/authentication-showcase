@@ -1,0 +1,338 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/text_view_announcement_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/announcement_create_title"
+                    android:layout_weight="3"
+                    android:layout_gravity="center_vertical" />
+
+                <EditText
+                    android:id="@+id/edit_text_announcement_title_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_button_round_corner_red_bg_white"
+                    android:textColor="@color/black"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/text_view_start_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/announcement_create_start_date"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical" />
+
+                <EditText
+                    android:id="@+id/edit_text_announcement_start_date_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_button_round_corner_red_bg_white"
+                    android:textColor="@color/black"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="3"
+                    android:focusable="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/text_view_end_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/announcement_create_end_date"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical" />
+
+                <EditText
+                    android:id="@+id/edit_text_announcement_end_date_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_button_round_corner_red_bg_white"
+                    android:textColor="@color/black"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="3"
+                    android:focusable="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/text_view_announcement_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/announcement_create_location"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical" />
+
+                <EditText
+                    android:id="@+id/edit_text_announcement_location_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_button_round_corner_red_bg_white"
+                    android:textColor="@color/black"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_message_images_content"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp"
+                android:weightSum="3"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout_selected_image1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_button_round_corner_red_bg_white"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/image_view_selected_image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:placeholderImage="@drawable/ic_camera_grey"
+                        app:placeholderImageScaleType="center"
+                        fresco:roundedCornerRadius="8dp" />
+
+                    <ImageView
+                        android:id="@+id/image_view_delete_image1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_cancel_white"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone"
+                        android:padding="10dp"
+                        android:background="@drawable/shape_round_circle_red" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/announcement_create_detail" />
+
+                <EditText
+                    android:id="@+id/edit_text_announcement_detail_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_button_round_corner_red_bg_white"
+                    android:textColor="@color/black"
+                    android:lines="5"
+                    android:gravity="top|start"
+                    android:inputType="textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="6dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/announcement_create_require_accept" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_is_require_accept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp">
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_not_accept"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/announcement_create_require_accept_not_accept"
+                        android:checked="true"
+                        android:textSize="16sp"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_accept"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/announcement_create_require_accept_accept"
+                        android:textSize="16sp"
+                        android:textColor="@color/black" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/announcement_create_is_publish" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_is_publish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp">
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_public"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/announcement_create_is_publish_publish"
+                        android:checked="true"
+                        android:textSize="16sp"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_private"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/announcement_create_is_publish_not_publish"
+                        android:textSize="16sp"
+                        android:textColor="@color/black" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:visibility="visible"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp">
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/announcement_create_submit"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/shape_button_round_corner_red_bg_red" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="labelColor" format="color" />
+    <attr name="plainTextColor" format="color" />
+
+    <declare-styleable name="RatingBarAttributes">
+        <attr name="numStars" format="integer" />
+        <attr name="rating" format="float" />
+        <attr name="starPadding" format="integer" />
+        <attr name="drawableEmpty" format="reference" />
+        <attr name="drawableFilled" format="reference" />
+        <attr name="touchable" format="boolean" />
+        <attr name="clearRatingEnabled" format="boolean" />
+        <attr name="starWidth" format="dimension" />
+        <attr name="starHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SpinnerDialog">
+        <attr name="dialog_title" format="string|reference" />
+        <attr name="dialog_confirm" format="string|reference" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="th.co.knightfrank.kf_care_android.admin.screens.jobrequest.jobcreate.CreateJobRequestByAdminActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            app:layout_collapseMode="pin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/job_request_create_toolbar_title"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="30dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/layout_loading_overlay" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/job_request_create_job_title"
+                    android:layout_weight="3" />
+
+                <EditText
+                    android:id="@+id/edit_text_job_assignment_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_button_round_corner_red_bg_white"
+                    android:textColor="@color/black"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="16sp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/Separator.Grey"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/job_request_create_priority"
+                    android:layout_weight="3" />
+
+                <th.co.knightfrank.kf_care_android.customer.ui.views.spinner.SpinnerDialog
+                    android:id="@+id/spinner_priority"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:dialog_confirm="@string/confirm"
+                    app:dialog_title="@string/job_request_create_priority_spinner_default" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/Separator.Grey"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/job_request_create_area"
+                    android:layout_weight="3" />
+
+                <th.co.knightfrank.kf_care_android.customer.ui.views.spinner.SpinnerDialog
+                    android:id="@+id/spinner_job_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:dialog_confirm="@string/confirm"
+                    app:dialog_title="@string/job_request_create_area_spinner_default" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/job_request_create_system"
+                    android:layout_weight="3" />
+
+                <th.co.knightfrank.kf_care_android.customer.ui.views.spinner.SpinnerDialog
+                    android:id="@+id/spinner_job_system_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:dialog_confirm="@string/confirm"
+                    app:dialog_title="@string/job_request_create_system_spinner_default" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/Separator.Grey"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/job_request_create_contact_name"
+                    android:layout_weight="3" />
+
+                <EditText
+                    android:id="@+id/edit_text_contact_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_button_round_corner_red_bg_white"
+                    android:textColor="@color/black"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="16sp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/job_request_create_contact_tel_no"
+                    android:layout_weight="3" />
+
+                <EditText
+                    android:id="@+id/edit_text_contact_tel_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_button_round_corner_red_bg_white"
+                    android:textColor="@color/black"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="16sp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/job_request_create_contact_room_no"
+                    android:layout_weight="3" />
+
+                <EditText
+                    android:id="@+id/edit_text_contact_room_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_button_round_corner_red_bg_white"
+                    android:textColor="@color/black"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="16sp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/Separator.Grey"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_job_images_content"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout_selected_image1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_button_round_corner_red_bg_white"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/image_view_selected_image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:placeholderImage="@drawable/ic_camera_grey"
+                        app:placeholderImageScaleType="center"
+                        fresco:roundedCornerRadius="8dp" />
+
+                    <ImageView
+                        android:id="@+id/image_view_delete_image1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_cancel_white"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone"
+                        android:padding="10dp"
+                        android:background="@drawable/shape_round_circle_red" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout_selected_image2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_button_round_corner_red_bg_white"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/image_view_selected_image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:placeholderImage="@drawable/ic_camera_grey"
+                        app:placeholderImageScaleType="center"
+                        fresco:roundedCornerRadius="8dp" />
+
+                    <ImageView
+                        android:id="@+id/image_view_delete_image2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_cancel_white"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone"
+                        android:padding="10dp"
+                        android:background="@drawable/shape_round_circle_red" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout_selected_image3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_button_round_corner_red_bg_white"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/image_view_selected_image3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:placeholderImage="@drawable/ic_camera_grey"
+                        app:placeholderImageScaleType="center"
+                        fresco:roundedCornerRadius="8dp" />
+
+                    <ImageView
+                        android:id="@+id/image_view_delete_image3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_cancel_white"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone"
+                        android:padding="10dp"
+                        android:background="@drawable/shape_round_circle_red" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/Separator.Grey"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/announcement_create_detail" />
+
+                <EditText
+                    android:id="@+id/edit_text_job_detail_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_button_round_corner_red_bg_white"
+                    android:textColor="@color/black"
+                    android:lines="5"
+                    android:gravity="top|start"
+                    android:inputType="textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="6dp" />
+            </LinearLayout>
+
+            <View
+                style="@style/Separator.Grey"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/job_assignment_admin_appointment_date" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp">
+
+                    <EditText
+                        android:id="@+id/edit_text_admin_appointment_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:background="@drawable/shape_button_round_corner_red_bg_white"
+                        android:textColor="@color/black"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textSize="16sp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:hint="@string/date"
+                        android:focusable="false" />
+
+                    <EditText
+                        android:id="@+id/edit_text_admin_appointment_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:background="@drawable/shape_button_round_corner_red_bg_white"
+                        android:textColor="@color/black"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textSize="16sp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:hint="@string/time"
+                        android:focusable="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/Separator.Grey"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/job_assignment_technician"
+                    android:layout_weight="3" />
+
+                <th.co.knightfrank.kf_care_android.customer.ui.views.spinner.SpinnerDialog
+                    android:id="@+id/spinner_assign_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:dialog_confirm="@string/confirm"
+                    app:dialog_title="@string/job_assignment_technician_spinner_default" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:visibility="visible"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp">
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/job_request_create_send_button"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/shape_button_round_corner_red_bg_red" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

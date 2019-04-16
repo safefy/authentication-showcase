@@ -1,0 +1,36 @@
+ext {
+    versions = [
+            support             : '27.0.1',
+            constraint          : '1.0.2',
+            rx                  : '2.1.0',
+            rxAndroid           : '2.0.1',
+            retrofit            : '2.3.0',
+            dagger              : '2.11',
+            moshi               : '2.3.0',
+            fresco              : '1.3.0',
+            threeten            : '1.0.5',
+            snacky              : '1.0.3',
+            awesomeValidation   : '2.0',
+            ahBottomNavigation  : '2.1.0'
+    ]
+
+    dependencySources = [
+            designSupport           : "com.android.support:design:$versions.support",
+            appCompat               : "com.android.support:appcompat-v7:$versions.support",
+            constraint              : "com.android.support.constraint:constraint-layout:$versions.constraint",
+            rx                      : "io.reactivex.rxjava2:rxjava:$versions.rx",
+            rxAndroid               : "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid",
+            retrofit                : "com.squareup.retrofit2:retrofit:$versions.retrofit",
+            retrofitAdapterRx       : "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit",
+            moshi                   : "com.squareup.retrofit2:converter-moshi:$versions.moshi",
+            dagger                  : "com.google.dagger:dagger:$versions.dagger",
+            daggerAndroid           : "com.google.dagger:dagger-android-support:$versions.dagger",
+            daggerCompiler          : "com.google.dagger:dagger-compiler:$versions.dagger",
+            daggerAndroidProcessor  : "com.google.dagger:dagger-android-processor:$versions.dagger",
+            fresco                  : "com.facebook.fresco:fresco:$versions.fresco",
+            threeten                : "com.jakewharton.threetenabp:threetenabp:$versions.threeten",
+            snacky                  : "com.github.matecode:Snacky:$versions.snacky",
+            awesomeValidation       : "com.basgeekball:awesome-validation:$versions.awesomeValidation",
+            ahBottomNavigation      : "com.aurelhubert:ahbottomnavigation:$versions.ahBottomNavigation"
+    ]
+}

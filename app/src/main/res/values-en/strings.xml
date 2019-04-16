@@ -1,0 +1,413 @@
+<resources>
+    <!-- Application -->
+    <string name="app_name">KF Care</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="attach">Attach</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="get_picture">Get Picture</string>
+    <string name="language_alert_title">Please select a language</string>
+    <string name="language">TH/EN</string>
+    <string name="language_thai">ภาษาไทย</string>
+    <string name="language_english">English</string>
+    <string name="register_title_building_name">Building</string>
+    <string name="error_alert_floor">Please input Floor</string>
+    <string name="error_alert_room">Please input Room</string>
+    <!-- Splash -->
+    <string name="kf_care">Knight Frank Care</string>
+    <string name="welcome">Welcome</string>
+    <string name="splash_info">Please request an Invitation Code from a legal entity to apply</string>
+    <string name="splash_register_by_email">Register by Email</string>
+    <string name="splash_have_account">Already applied</string>
+    <string name="splash_click_to_login">Login</string>
+
+
+    <!-- Register Invitation Code -->
+    <string name="invitation_code">Invitation Code</string>
+    <string name="invitation_code_button_submit">Submit</string>
+    <string name="invitation_code_button_cancel">Cancel</string>
+    <string name="register_alert_building">No Building Data </string>
+    <string name="register_alert_floor">No Floor Data</string>
+    <string name="register_alert_room">No Room Data</string>
+
+    <!-- Register -->
+    <string name="register_toolbar_name">Register</string>
+    <string name="register_title_project_name">Project</string>
+    <string name="register_title_floor_name">Floor</string>
+    <string name="register_title_room_no">Room No.</string>
+    <string name="register_title_user_first_name">First Name</string>
+    <string name="register_title_user_last_name">Last Name</string>
+    <string name="register_title_tel_no">Tel No.</string>
+    <string name="register_title_email">Email</string>
+    <string name="register_title_password">Password</string>
+    <string name="register_title_confirm_password">Confirm Password</string>
+    <string name="register_button_register_submit">Register</string>
+    <string name="register_button_register_cancel">Cancel</string>
+    <string name="register_success">ลงทะเบียนเรียบร้อย กรุณารอการยืนยันจากทางนิติบุคคล</string>
+    <string name="register_i_agrees_and_accept">I agree and accept to the teams and conditions by submit this enquiry.</string>
+    <string name="back">Back</string>
+
+    <!-- Login Email -->
+    <string name="email_login_password">Password</string>
+    <string name="login_register">Register</string>
+    <string name="email_login_button_login">Log in</string>
+
+    <!-- Error -->
+    <string name="error_require_invitation_code">Please input Invitation Code</string>
+    <string name="error_require_email">Please input Email</string>
+    <string name="error_require_username">Please input Username</string>
+    <string name="error_require_password">Please input Password</string>
+    <string name="error_require_password_size">Please input Password > 5 character</string>
+    <string name="error_require_confirmed_password">Please input Confirm Password = Password</string>
+    <string name="error_require_first_name">Please input First Name</string>
+    <string name="error_require_last_name">Please input Last Name</string>
+    <string name="error_require_tel_no">Please input Tel No.</string>
+
+    <!-- DashBoard -->
+    <string name="navigation_drawer_welcome">Welcome</string>
+    <string name="navigation_drawer_dashboard">Dashboard</string>
+    <string name="navigation_drawer_contact_us">Contact Us</string>
+    <string name="navigation_drawer_job_status">Job Status</string>
+    <string name="navigation_drawer_profile">Profile</string>
+    <string name="navigation_drawer_kf_care">Knight Frank Care</string>
+    <string name="navigation_drawer_parcels">Packages Delivery</string>
+    <string name="navigation_drawer_billings">Billings</string>
+    <string name="navigation_drawer_announcements">Announcements</string>
+    <string name="navigation_drawer_job_request">Job Request</string>
+    <string name="navigation_drawer_contact">Message</string>
+    <string name="navigation_drawer_work_order">Work Order</string>
+    <string name="navigation_drawer_settings">Settings</string>
+    <string name="navigation_drawer_logout">Logout</string>
+    <string name="navigation_drawer_create_job_request">Create Job Request</string>
+    <string name="navigation_drawer_create_message">Send Message</string>
+    <string name="logout_confirm_title">Do you want to log out?</string>
+    <string name="logout_confirm_accept">Log Out</string>
+    <string name="logout_confirm_cancel">Cancel</string>
+
+    <string name="dashboard_card_type_all_title">All</string>
+    <string name="dashboard_card_type_parcels_title">Packages Delivery</string>
+    <string name="dashboard_card_type_announcement_title">Announcements</string>
+    <string name="dashboard_card_type_job_request_title">Job Request</string>
+    <string name="dashboard_card_type_billing_title">Billings</string>
+    <string name="dashboard_card_type_message_title">Messages</string>
+    <string name="dashboard_card_type_message_item_num_rows">%1$s Item</string>
+
+    <string name="change_room">Change the room</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Profile</string>
+    <string name="profile_about_you">About you</string>
+    <string name="profile_notification_setting">Notification</string>
+    <string name="profile_name">Name %1$s %2$s</string>
+    <string name="profile_room">Room %1$s</string>
+    <string name="profile_tel_no">Tel No. %1$s</string>
+    <string name="profile_line_id">LINE ID : %1$s</string>
+    <string name="profile_email">Email : %1$s</string>
+    <string name="profile_car_parking">Car Parking %1$s</string>
+    <string name="profile_btn_edit_profile">Edit Profile</string>
+    <string name="profile_noti_setting_desc">Legal entity can contact?</string>
+
+
+    <!-- Profile Edit -->
+    <string name="profile_edit_line_id">LINE ID</string>
+    <string name="profile_edit_car_parking">Car Parking</string>
+    <string name="profile_edit_car_plate">Car Plate</string>
+    <string name="profile_edit_dialog_content">Edit Profile Success.</string>
+    <string name="profile_edit_dialog_accept">OK</string>
+    <string name="profile_edit_noti_setting_desc">Need legal entity contact?</string>
+    <string name="profile_edit_noti_btn_line">LINE</string>
+    <string name="profile_edit_noti_btn_mobile">Mobile</string>
+    <string name="profile_edit_noti_btn_save">Save Change</string>
+
+    <!-- Announcement -->
+    <string name="announcement_title">Announcement</string>
+    <string name="announcement_between_date">%1$s - %2$s</string>
+    <string name="announcement_detail_title">Meeting Details</string>
+    <string name="announcement_button_accepted">Join</string>
+    <string name="announcement_button_not_accepted">Not Join</string>
+    <string name="announcement_text_accepted">Join</string>
+    <string name="announcement_text_not_accepted">Not Join</string>
+    <string name="announcement_text_waiting_accepted">Waiting Accept</string>
+
+    <!-- Announcement Create -->
+    <string name="announcement_create_toolbar_title">Please fill in the announcement information.</string>
+    <string name="announcement_create">Create New Announcement</string>
+    <string name="announcement_create_title">Title</string>
+    <string name="announcement_create_start_date">Start Date</string>
+    <string name="announcement_create_end_date">End Date</string>
+    <string name="announcement_create_location">Location</string>
+    <string name="announcement_create_detail">Detail</string>
+    <string name="announcement_create_require_accept">Is require accept</string>
+    <string name="announcement_create_require_accept_default">--Please Select--</string>
+    <string name="announcement_create_require_accept_accept">Require</string>
+    <string name="announcement_create_require_accept_not_accept">Not Require</string>
+    <string name="announcement_create_submit">Create Announcement</string>
+    <string name="announcement_create_success_dialog">Create Announcement Success</string>
+    <string name="announcement_create_is_publish">Is publish</string>
+    <string name="announcement_create_is_publish_publish">Publish</string>
+    <string name="announcement_create_is_publish_not_publish">Not Publish</string>
+    <string name="announcement_create_public_send">Send to all</string>
+    <string name="announcement_create_private_send">Send to someone</string>
+    <string name="or">OR</string>
+    <string name="announcement_create_public_send_confirm">Confirm to send a message to all.</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="announcement_create_dialog_title">Create New Announcement</string>
+    <string name="announcement_create_dialog_content">Create new announcement Success.</string>
+    <string name="announcement_create_dialog_accept">OK</string>
+
+    <!-- Announcement Edit -->
+    <string name="announcement_edit_toolbar_title">Edit Announcement</string>
+    <string name="announcement_edit_submit_btn">Update</string>
+    <string name="announcement_edit_dialog_title">Edit Announcement</string>
+    <string name="announcement_edit_dialog_content">Edit Announcement Success</string>
+    <string name="announcement_edit_dialog_accept">OK</string>
+
+    <!-- Person Search -->
+    <string name="person_search_toolbar_title">Residential Search</string>
+    <string name="person_search_search_by_name">Search by name</string>
+
+    <!-- JobRequestCreate -->
+    <string name="job_request_create_toolbar_title">Please fill out the job request information.</string>
+    <string name="job_request_create_job_title">Job Title</string>
+    <string name="job_request_create_job_detail">Job Detail</string>
+    <string name="job_request_create_contact_name">Contact Name</string>
+    <string name="job_request_create_contact_tel_no">Contact Tel No.</string>
+    <string name="job_request_create_contact_room_no">Contact Room No.</string>
+    <string name="job_request_create_send_button">Send Job Request</string>
+    <string name="job_request_create_send_success_message_dialog">The next step will be to contact you. To make an appointment</string>
+    <string name="job_request_create_send_success_message_dialog_accept">OK</string>
+    <string name="job_request_create_appointment_date">Appointment Date</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="job_request_create_priority">Priority</string>
+    <string name="job_request_create_priority_spinner_default">Select Priority</string>
+    <string name="job_request_create_area">Type</string>
+    <string name="job_request_create_area_spinner_default">Select Type</string>
+    <string name="job_request_create_system">System</string>
+    <string name="job_request_create_system_spinner_default">Select System</string>
+    <string name="job_request_create_status">Status</string>
+    <string name="job_request_create_status_spinner_default">Select Status</string>
+
+    <!-- JobRequestList -->
+    <string name="job_request_list_toolbar_title">Job Request List</string>
+    <string name="job_request_list_toolbar_tab_waiting_approve">Waiting Approve</string>
+    <string name="job_request_list_toolbar_tab_all">All</string>
+
+    <!-- JobRequestDetail -->
+    <string name="job_request_detail_title">Job Request Detail</string>
+    <string name="job_request_detail_toolbar_tab_detail">Detail</string>
+    <string name="job_request_detail_toolbar_tab_status">Status</string>
+    <string name="job_request_detail_toolbar_tab_report">Technician</string>
+    <string name="job_request_detail_job_title">Title</string>
+    <string name="job_request_detail_technician">Technician</string>
+    <string name="job_request_detail_technician_job_status">Job Performance</string>
+    <string name="job_request_detail_technician_job_status_success">Success</string>
+    <string name="job_request_detail_technician_job_status_fail">Fail</string>
+    <string name="job_request_detail_technician_user_comment">Comment</string>
+    <string name="job_request_detail_technician_btn_submit">Send job performance</string>
+    <string name="job_request_detail_technician_btn_submit_success_dialog">Thanks for the feedback. We will take your comments to improve. To develop our service.</string>
+    <string name="job_request_detail_technician_job_done">Close Job</string>
+    <string name="job_request_detail_transaction_status_open_title">The request was sent</string>
+    <string name="job_request_detail_transaction_status_job_assign_title">Appointment Detail</string>
+    <string name="job_request_detail_transaction_status_job_done_title">Working Status</string>
+    <string name="job_request_detail_transaction_status_job_close_title">Close</string>
+    <string name="job_request_detail_technician_comment_title">Performance</string>
+    <string name="job_request_detail_technician_job_detail">Staff Comment</string>
+    <string name="job_request_detail_btn_job_assign">JOB ASSIGNMENT</string>
+    <string name="job_request_detail_btn_job_edit">EDIT</string>
+
+    <!-- JobAssignment -->
+    <string name="job_assignment_toolbar_title">Job Assignment</string>
+    <string name="job_assignment_admin_appointment_date">Confirm Appointment Date</string>
+    <string name="job_assignment_technician">Assign To</string>
+    <string name="job_assignment_technician_spinner_default">Select Technician</string>
+    <string name="job_assignment_btn_submit">UPDATE</string>
+    <string name="job_assignment_dialog_title">Job Assignment</string>
+    <string name="job_assignment_dialog_content">Job Assign Success.</string>
+    <string name="job_assignment_dialog_accept">OK</string>
+
+    <!-- Parcel -->
+    <string name="parcel_title">Packages Delivery</string>
+    <string name="parcel_shipped_by">Shipped by %1$s</string>
+    <string name="parcel_information_show_code">Packages Code</string>
+    <string name="parcel_detail_status">Status : %1$s</string>
+    <string name="parcel_note">Description : %1$s</string>
+    <string name="parcel_detail_status_waiting_receive">Standby</string>
+    <string name="parcel_detail_status_received">Received</string>
+    <string name="parcel_information_go_to_guide">Click on the picking process guide.</string>
+
+    <!-- Parcel Guide -->
+    <string name="parcel_guide_title">Picking Guide</string>
+    <string name="parcel_guide_next">Next</string>
+    <string name="parcel_guide_previous">Previous</string>
+    <string name="parcel_guide_finish">Finish</string>
+    <string name="parcel_guide_1_information_label">1. Pick up your packages at the corporate office.</string>
+    <string name="parcel_guide_1_information_detail">You can pick up your packages at the corporate office from 09:00 to 18:00 every day.</string>
+    <string name="parcel_guide_2_information_label">2. Show packages code for staff</string>
+    <string name="parcel_guide_2_information_detail">The entity will use this code to find your package.</string>
+    <string name="parcel_guide_3_information_label">3. Check and pick up your packages.</string>
+    <string name="parcel_guide_3_information_detail">Make sure your packages is in stock before leaving the office.</string>
+    <string name="parcel_guide_your_parcel_no">Your packages code</string>
+
+    <!-- Parcel Register -->
+    <string name="parcel_register_toolbar_title">Register Packages Delivery</string>
+    <string name="parcel_register_room_no">Room No.</string>
+    <string name="parcel_register_receiver_name">Receiver Name</string>
+    <string name="parcel_register_provider_name">Provider</string>
+    <string name="parcel_register_provider_name_default">Select Provider</string>
+    <string name="parcel_register_sender_name">Sender Name</string>
+    <string name="parcel_register_type">Type</string>
+    <string name="parcel_register_type_default">Select Type</string>
+    <string name="parcel_register_note">Note</string>
+    <string name="parcel_register_dialog_contents">Register Packages Delivery Success.</string>
+    <string name="parcel_register_dialog_accept">OK</string>
+
+    <!-- Parcel Checkout -->
+    <string name="parcel_checkout_toolbar_title">Checkout Packages Delivery</string>
+    <string name="parcel_checkout_code">Packages Delivery Code</string>
+    <string name="parcel_checkout_name">Checkout Name</string>
+    <string name="parcel_checkout_submit">Checkout Submit</string>
+    <string name="parcel_checkout_dialog_contents">Checkout Packages Delivery Success</string>
+    <string name="parcel_checkout_dialog_accept">OK</string>
+
+    <!-- Message -->
+    <string name="message_title">Inbox Message</string>
+    <string name="message_item_replied">Replied</string>
+    <string name="message_item_waiting_reply">Waiting Reply</string>
+
+    <!-- Message Create -->
+    <string name="message_create_toolbar_title">Please fill in the contact information.</string>
+    <string name="message_create_job_title">Title</string>
+    <string name="message_create_job_detail">Description</string>
+    <string name="message_create_contact_name">Contact Name</string>
+    <string name="message_create_contact_tel_no">Contact Tel No.</string>
+    <string name="message_create_contact_room_no">Room No.</string>
+    <string name="message_create_send_button">Send Message</string>
+    <string name="message_create_send_success_message_dialog">Send Message Entity will reply inbox in your application within 24 hours.</string>
+    <string name="message_create_send_success_message_dialog_accept">OK</string>
+
+    <!-- Message Detail -->
+    <string name="message_detail_subject">Subject %1$s</string>
+    <string name="message_detail_from">From Room %1$s %2$s</string>
+    <string name="message_detail_to">To %1$s</string>
+    <string name="message_detail_reply">Reply</string>
+    <string name="message_detail_reply_subject">Subject %1$s</string>
+    <string name="legal_entity">Legal Entity</string>
+    <string name="message_detail_reply_from_legal">From Legal Entity</string>
+    <string name="message_detail_reply_to_user">To %1$s %2$s</string>
+    <string name="reply">Reply</string>
+
+    <!-- JobAccept -->
+    <string name="job_accept_dialog_title">Job Accept</string>
+    <string name="job_accept_dialog_content">Job Accept Success.</string>
+    <string name="job_accept_dialog_accept">OK</string>
+
+    <!-- TakeActionResult -->
+    <string name="take_action_result_toolbar_title">Take Action Report</string>
+    <string name="take_action_result_action_picture">Take Action Image</string>
+    <string name="take_action_result_action_detail">Take Action Detail</string>
+    <string name="take_action_result_btn_submit">Send Report</string>
+    <string name="take_action_result_content">Send Report Success</string>
+    <string name="take_action_result_accept">OK</string>
+    <string name="take_action_result_is_complete">Is Complete?</string>
+    <string name="take_action_result_is_complete_true">Complete</string>
+    <string name="take_action_result_is_complete_false">Not Complete</string>
+    <string name="take_action_result_is_finish_job">Is Finish Job?</string>
+    <string name="take_action_result_is_finish_job_true">Finish</string>
+    <string name="take_action_result_is_finish_job_false">Not Finish</string>
+
+    <!-- Message Reply -->
+    <string name="message_reply_toolbar_title">Reply Message</string>
+    <string name="message_reply_from">From %1$s</string>
+    <string name="message_reply_to">Reply To Room %1$s %2$s</string>
+    <string name="message_reply_subject">Reply Subject</string>
+    <string name="message_reply_detail">Write Reply</string>
+    <string name="message_reply_btn_send_reply">Send Reply</string>
+    <string name="message_reply_dialog_title">Reply Message</string>
+    <string name="message_reply_dialog_content">Reply Message Success.</string>
+    <string name="message_reply_dialog_accept">OK</string>
+
+    <!-- Billing -->
+    <string name="billing_list">Billing List</string>
+    <string name="month">Month</string>
+    <string name="month_spinner_default">Select Month</string>
+    <string name="year">Year</string>
+    <string name="year_spinner_default">Select Year</string>
+    <string name="period">Period %1$s</string>
+    <string name="search">Search</string>
+    <string name="billing_room_list">Billing Room List</string>
+    <string name="building">Building</string>
+    <string name="building_spinner_default">Select Building</string>
+    <string name="floor">Floor</string>
+    <string name="floor_spinner_default">Select Floor</string>
+    <string name="room_name">Room : %1$s</string>
+    <string name="meter_no">Meter : %1$s</string>
+    <string name="save_meter_title">Save Meter</string>
+    <string name="meter_no_hint">Input Meter No</string>
+    <string name="save_meter_btn">Save</string>
+
+    <!-- Billing Detail -->
+    <string name="billing_toolbar_title">Billing</string>
+    <string name="billing_water">Water Bill</string>
+    <string name="billing_central">Central Expense Bill</string>
+    <string name="billing_due_date">Due date %1$s</string>
+    <string name="billing_bill_no">Bill No. %1$s</string>
+    <string name="billing_period">Period %1$s - %2$s</string>
+    <string name="billing_meter_no_before">Meter No. previous</string>
+    <string name="billing_meter_no_after">Meter No.</string>
+    <string name="billing_water_unit_total">Unit Total</string>
+    <string name="billing_water_unit">%1$s Unit</string>
+    <string name="billing_price_per_unit">Price/Unit</string>
+    <string name="billing_price_total">Total price</string>
+    <string name="billing_central_unit_total">Unit Total</string>
+    <string name="billing_status_owe">Owe</string>
+    <string name="billing_status_paid">Paid</string>
+    <string name="billing_status_billed">Billed</string>
+    <string name="billing_status">Status %1$s</string>
+    <string name="billing_paid_btn">Inform Payment %1$s Baht</string>
+    <string name="price_baht">%1$s Baht</string>
+    <string name="billing_payment_upload_image">Payment image upload</string>
+    <string name="payment_inform_dialog_content">Inform payment Success</string>
+    <string name="payment_inform_dialog_accept">OK</string>
+    <string name="billing_price_per_sqm">Price/Sq.m</string>
+    <string name="room_area">Room Size</string>
+    <string name="billing_central_sqm">%1$s Sq.m</string>
+
+    <!-- Settings -->
+    <string name="settings_language_title">Choose Language</string>
+    <string name="settings_language_option_default">Default (Auto)</string>
+    <string name="settings_language_option_th">ไทย</string>
+    <string name="settings_language_option_en">English</string>
+    <string name="settings_submit_btn">Save Change</string>
+    <string name="settings_submit_btn_confirm_dialog_title">Are you confirm?</string>
+    <string name="settings_submit_btn_confirm_dialog_accept">Confirm</string>
+    <string name="settings_submit_btn_confirm_dialog_cancel">Cancel</string>
+
+    <!-- Change Room -->
+    <string name="change_room_dialog_confirm_content">Do you want to change room?</string>
+    <string name="change_room_dialog_confirm_accept">Accept</string>
+    <string name="change_room_dialog_confirm_cancel">Cancel</string>
+    <string name="change_room_dialog_success_content">Change room success.</string>
+
+    <!-- Room Search -->
+    <string name="room_search_toolbar_title">Room Search</string>
+    <string name="room_search_search_by_room_no">Search by Room No.</string>
+
+    <!-- Dashboard Search -->
+    <string name="dashboard_search_toolbar_title">Dashboard Search</string>
+    <string name="dashboard_search_by_text">Search by Dashboard Text</string>
+
+    <!-- Forget Password -->
+    <string name="forget_password">Forget Password</string>
+    <string name="forget_password_desc">Please enter a register email address. To set a new password.</string>
+    <string name="forget_password_btn_submit">Submit</string>
+    <string name="forget_password_dialog_content">Reset password has sending to %1$s</string>
+    <string name="forget_password_dialog_accept">OK</string>
+
+    <string name="empty_message_job_request">No Data</string>
+
+    <string name="register_title_old_password">Old Password</string>
+    <string name="register_title_new_password">New Password</string>
+    <string name="register_title_confirmation_password">Confirm Password</string>
+</resources>

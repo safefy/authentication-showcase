@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "617107957787",
+    "firebase_url": "https://kf-care.firebaseio.com",
+    "project_id": "kf-care",
+    "storage_bucket": "kf-care.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617107957787:android:676547b94482884c",
+        "android_client_info": {
+          "package_name": "th.co.knightfrank.kf_care_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617107957787-2atjk48u46shs05q1c1hfvo6ud2nbmci.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "th.co.knightfrank.kf_care_android",
+            "certificate_hash": "94df7804e233031eea875ae6e1060c72e50b57e2"
+          }
+        },
+        {
+          "client_id": "617107957787-6u6o25f6vuu85r623v2f0j5jrt68thlc.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "617107957787-6u6o25f6vuu85r623v2f0j5jrt68thlc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYUeO7F_3Fp60-poh4KorPnQTuxR9eG8g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "617107957787-6u6o25f6vuu85r623v2f0j5jrt68thlc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,40 @@
+package th.co.knightfrank.data_java.data.responses.jobrequests
+
+import com.squareup.moshi.Json
+import th.co.knightfrank.data_java.data.responses.projects.ProjectInfoResponse
+
+data class JobRequestInfoResponse(@Json(name = "AdminAppointDate") val _adminAppointDate: String? = null,
+                                  @Json(name = "AppointDate") val _appointDate: String? = null,
+                                  @Json(name = "AssignByStaff") val _assignByStaff: AssignStaffInfoResponse? = null,
+                                  @Json(name = "AssignToStaff") val _assignToStaff: AssignStaffInfoResponse? = null,
+                                  @Json(name = "ContactComment") val _contactComment: String? = null,
+                                  @Json(name = "ContactMobileNo") val _contactMobileNo: String? = null,
+                                  @Json(name = "ContactName") val _contactName: String? = null,
+                                  @Json(name = "ContactRoomName") val _contactRoomName: String? = null,
+                                  @Json(name = "CreateAt") val _createAt: String? = null,
+                                  @Json(name = "CreateDisplayTime") val _createDisplayTime: String? = null,
+                                  @Json(name = "Detail") val _detail: String? = null,
+                                  @Json(name = "JobAreaID") val _jobAreaID: Int? = null,
+                                  @Json(name = "JobAreaName") val _jobAreaName: String? = null,
+                                  @Json(name = "JobNo") val _jobNo: String? = null,
+                                  @Json(name = "JobRepairImageList") val _jobRepairImageList: List<String>? = listOf(),
+                                  @Json(name = "JobRequestID") val _jobRequestID: Int? = null,
+                                  @Json(name = "JobRequestImageList") val _jobRequestImageList: List<String>? = listOf(),
+                                  @Json(name = "JobRequestUser") val _jobRequestUser: JobRequestUserInfoResponse? = null,
+//                                  @Json(name = "JobStatusID") val _jobStatusID: Int? = null,
+//                                  @Json(name = "JobStatusName") val _jobStatusName: String? = null,
+                                  @Json(name = "JobStatus") val _jobStatus: JobStatusInfoResponse? = null,
+                                  @Json(name = "JobSystemTypeDesc") val _jobSystemTypeDesc: String? = null,
+                                  @Json(name = "JobSystemTypeID") val _jobSystemTypeID: Int? = null,
+                                  @Json(name = "JobSystemTypeName") val _jobSystemTypeName: String? = null,
+                                  @Json(name = "MaintenanceEnddate") val _maintenanceEndDate: String? = null,
+                                  @Json(name = "MaintenanceStartDate") val _maintenanceStartDate: String? = null,
+                                  @Json(name = "PriorityDesc") val _priorityDesc: String? = null,
+                                  @Json(name = "PriorityID") val _priorityID: Int? = null,
+                                  @Json(name = "PriorityName") val _priorityName: String? = null,
+                                  @Json(name = "ProjectInfo") val _projectInfo: ProjectInfoResponse? = null,
+                                  @Json(name = "RecordNo") val _recordNo: Int? = null,
+                                  @Json(name = "StaffComment") val _staffComment: String? = null,
+                                  @Json(name = "Title") val _title: String? = null,
+                                  @Json(name = "UpdatedAt") val _updateAt: String? = null
+)

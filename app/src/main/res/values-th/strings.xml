@@ -1,0 +1,412 @@
+<resources>
+    <!-- Application -->
+    <string name="app_name">KF Care</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="attach">แนบไฟล์</string>
+    <string name="take_photo">ถ่ายรูป</string>
+    <string name="get_picture">เลือกรูป</string>
+    <string name="language_alert_title">กรุณาเลือกภาษา</string>
+    <string name="language">TH/EN</string>
+    <string name="language_thai">ภาษาไทย</string>
+    <string name="language_english">English</string>
+    <string name="register_title_building_name">ตึก</string>
+    <!-- Splash -->
+    <string name="kf_care">Knight Frank Care</string>
+    <string name="welcome">ยินดีต้อนรับ</string>
+    <string name="splash_info">กรุณาขอ Invitation Code จากนิติบุคคลเพื่อสมัครใช้บริการ</string>
+    <string name="splash_register_by_email">สมัครด้วย Email</string>
+    <string name="splash_have_account">เคยสมัครแล้ว</string>
+    <string name="splash_click_to_login">กดเข้าสู่ระบบ</string>
+
+    <!-- Register Invitation Code -->
+    <string name="invitation_code">Invitation Code</string>
+    <string name="invitation_code_button_submit">ยืนยัน</string>
+    <string name="invitation_code_button_cancel">ยกเลิก</string>
+    <string name="register_alert_building">ไม่พบข้อมูลอาคาร</string>
+    <string name="register_alert_floor">ไม่พบข้อมูลชั้น</string>
+    <string name="register_alert_room">ไม่มีข้อมูลห้อง</string>
+    <string name="error_alert_floor">กรุณาเลือกชั้น</string>
+    <string name="error_alert_room">กรุณาเลือกห้อง</string>
+
+    <!-- Register -->
+    <string name="register_toolbar_name">ลงทะเบียน</string>
+    <string name="register_title_project_name">โครงการ</string>
+    <string name="register_title_floor_name">ชั้น</string>
+    <string name="register_title_room_no">ห้อง</string>
+    <string name="register_title_user_first_name">ชื่อ</string>
+    <string name="register_title_user_last_name">นามสกุล</string>
+    <string name="register_title_tel_no">เบอร์ติดต่อ</string>
+    <string name="register_title_email">อีเมล</string>
+    <string name="register_title_password">ตั้งรหัสผ่าน</string>
+    <string name="register_title_confirm_password">ยืนยันรหัสผ่าน</string>
+    <string name="register_button_register_submit">สมัครสมาชิก</string>
+    <string name="register_button_register_cancel">ยกเลิก</string>
+    <string name="register_success">ลงทะเบียนเรียบร้อย กรุณารอการยืนยันจากทางนิติบุคคล</string>
+    <string name="register_i_agrees_and_accept">ข้าพเจ้าเห็นด้วยและยอมรับเงื่อนไข ข้อตกลง</string>
+    <string name="back">กลับ</string>
+
+    <!-- Login Email -->
+    <string name="email_login_password">รหัสผ่าน</string>
+    <string name="email_login_button_login">เข้าสู่ระบบ</string>
+    <string name="login_register">สมัครสมาชิก</string>
+
+    <!-- Error -->
+    <string name="error_require_invitation_code">กรุณากรอก Invitation Code</string>
+    <string name="error_require_email">กรุณากรอก Email</string>
+    <string name="error_require_username">กรุณากรอก Username</string>
+    <string name="error_require_password">กรุณากรอก Password</string>
+    <string name="error_require_password_size">กรุณากรอก Password ให้มากกว่า 5 ตัวอักษร</string>
+    <string name="error_require_confirmed_password">กรุณากรอก Confirm Password ให้ตรงกับ Password</string>
+    <string name="error_require_first_name">กรุณากรอก ชื่อ</string>
+    <string name="error_require_last_name">กรุณากรอก นามสกุล</string>
+    <string name="error_require_tel_no">กรุณากรอก เบอร์โทรติดต่อ</string>
+
+    <!-- DashBoard -->
+    <string name="navigation_drawer_welcome">สวัสดีค่ะคุณ</string>
+    <string name="navigation_drawer_dashboard">Dashboard</string>
+    <string name="navigation_drawer_contact_us">ติดต่อสอบถาม</string>
+    <string name="navigation_drawer_job_status">สถานะงานซ่อม</string>
+    <string name="navigation_drawer_profile">โปรไฟล์ของคุณ</string>
+    <string name="navigation_drawer_kf_care">Knight Frank Care</string>
+    <string name="navigation_drawer_parcels">พัสดุ</string>
+    <string name="navigation_drawer_billings">แจ้งหนี้</string>
+    <string name="navigation_drawer_announcements">ประกาศ</string>
+    <string name="navigation_drawer_job_request">แจ้งซ่อม</string>
+    <string name="navigation_drawer_contact">ติดต่อ</string>
+    <string name="navigation_drawer_work_order">แจ้งซ่อม</string>
+    <string name="navigation_drawer_settings">ตั้งค่าระบบ</string>
+    <string name="navigation_drawer_logout">ออกจากระบบ</string>
+    <string name="navigation_drawer_create_job_request">แจ้งงานซ่อม</string>
+    <string name="navigation_drawer_create_message">ติดต่อสอบถาม</string>
+    <string name="logout_confirm_title">คุณต้องการจะออกจากระบบหรือไม่</string>
+    <string name="logout_confirm_accept">ออกจากระบบ</string>
+    <string name="logout_confirm_cancel">ยกเลิก</string>
+
+    <string name="dashboard_card_type_all_title">ทั้งหมด</string>
+    <string name="dashboard_card_type_parcels_title">พัสดุ</string>
+    <string name="dashboard_card_type_announcement_title">ประกาศ</string>
+    <string name="dashboard_card_type_job_request_title">งานซ่อม</string>
+    <string name="dashboard_card_type_billing_title">ค่าสาธารณูปโภค</string>
+    <string name="dashboard_card_type_message_title">ข้อความ</string>
+    <string name="dashboard_card_type_message_item_num_rows">%1$s รายการ</string>
+
+    <string name="change_room">เปลี่ยนห้อง</string>
+
+    <!-- Profile -->
+    <string name="profile_title">โปรไฟล์ของคุณ</string>
+    <string name="profile_about_you">เกี่ยวกับคุณ</string>
+    <string name="profile_notification_setting">ตั้งค่าเตือน</string>
+    <string name="profile_name">ชื่อ %1$s %2$s</string>
+    <string name="profile_room">ห้อง %1$s</string>
+    <string name="profile_tel_no">เบอร์ติดต่อ %1$s</string>
+    <string name="profile_line_id">LINE ID : %1$s</string>
+    <string name="profile_email">Email : %1$s</string>
+    <string name="profile_car_parking">ช่องจอดรถ %1$s</string>
+    <string name="profile_btn_edit_profile">แก้ไขข้อมูลส่วนตัว</string>
+    <string name="profile_noti_setting_desc">นิติสามารถติดต่อได้ทาง</string>
+
+
+    <!-- Profile Edit -->
+    <string name="profile_edit_line_id">LINE ID</string>
+    <string name="profile_edit_car_parking">ช่องจอดรถ</string>
+    <string name="profile_edit_car_plate">ทะเบียน</string>
+    <string name="profile_edit_dialog_content">แก้ไขข้อมูล เรียบร้อย</string>
+    <string name="profile_edit_dialog_accept">ตกลง</string>
+    <string name="profile_edit_noti_setting_desc">ต้องการให้นิติติดต่อทาง</string>
+    <string name="profile_edit_noti_btn_line">LINE</string>
+    <string name="profile_edit_noti_btn_mobile">มือถือ</string>
+    <string name="profile_edit_noti_btn_save">บันทึกการแก้ไข</string>
+
+    <!-- Announcement -->
+    <string name="announcement_title">ประกาศ</string>
+    <string name="announcement_between_date">%1$s - %2$s</string>
+    <string name="announcement_detail_title">รายละเอียดการประชุม</string>
+    <string name="announcement_button_accepted">เข้าร่วม</string>
+    <string name="announcement_button_not_accepted">ไม่เข้าร่วม</string>
+    <string name="announcement_text_accepted">เข้าร่วม</string>
+    <string name="announcement_text_not_accepted">ไม่เข้าร่วม</string>
+    <string name="announcement_text_waiting_accepted">รอตอบรับ</string>
+
+    <!-- Announcement Create -->
+    <string name="announcement_create_toolbar_title">กรุณากรอกข้อมูลประกาศ</string>
+    <string name="announcement_create">สร้างประกาศใหม่</string>
+    <string name="announcement_create_title">เรื่อง</string>
+    <string name="announcement_create_start_date">ตั้งแต่</string>
+    <string name="announcement_create_end_date">ถึง</string>
+    <string name="announcement_create_location">สถานที่</string>
+    <string name="announcement_create_detail">รายละเอียด</string>
+    <string name="announcement_create_require_accept">การตอบรับ</string>
+    <string name="announcement_create_require_accept_default">--กรุณาเลือก--</string>
+    <string name="announcement_create_require_accept_accept">ตอบรับ</string>
+    <string name="announcement_create_require_accept_not_accept">ไม่ตอบรับ</string>
+    <string name="announcement_create_submit">สร้างประกาศ</string>
+    <string name="announcement_create_success_dialog">สร้างประกาศสำเร็จแล้ว</string>
+    <string name="announcement_create_is_publish">การเผยแพร่</string>
+    <string name="announcement_create_is_publish_publish">เผยแพร่</string>
+    <string name="announcement_create_is_publish_not_publish">ไม่เผยแพร่</string>
+    <string name="announcement_create_public_send">ส่งให้ลูกบ้านทุกท่าน</string>
+    <string name="announcement_create_private_send">เลือกส่งให้บางท่าน</string>
+    <string name="or">หรือ</string>
+    <string name="announcement_create_public_send_confirm">กดยืนยันเพื่อส่งข้อความให้ลูกบ้านทุกท่าน</string>
+    <string name="confirm">ยืนยัน</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="announcement_create_dialog_title">สร้างประกาศ</string>
+    <string name="announcement_create_dialog_content">สร้างประกาศ เรียบร้อย</string>
+    <string name="announcement_create_dialog_accept">ตกลง</string>
+
+    <!-- Announcement Edit -->
+    <string name="announcement_edit_toolbar_title">แก้ไขประกาศ</string>
+    <string name="announcement_edit_submit_btn">แก้ไข</string>
+    <string name="announcement_edit_dialog_title">แก้ไขประกาศ</string>
+    <string name="announcement_edit_dialog_content">แก้ไขประกาศ เรียบร้อย</string>
+    <string name="announcement_edit_dialog_accept">ตกลง</string>
+
+    <!-- Person Search -->
+    <string name="person_search_toolbar_title">ค้นหาลูกบ้าน</string>
+    <string name="person_search_search_by_name">ค้นหาจากชื่อของลูกบ้าน</string>
+
+    <!-- JobRequestCreate -->
+    <string name="job_request_create_toolbar_title">กรุณากรอกข้อมูลแจ้งซ่อม</string>
+    <string name="job_request_create_job_title">แจ้งซ่อมเรื่อง</string>
+    <string name="job_request_create_job_detail">รายละเอียด</string>
+    <string name="job_request_create_contact_name">ชื่อผู้ติดต่อ</string>
+    <string name="job_request_create_contact_tel_no">เบอร์ติดต่อ</string>
+    <string name="job_request_create_contact_room_no">เลขห้อง</string>
+    <string name="job_request_create_send_button">ส่งเรื่องแจ้งซ่อม</string>
+    <string name="job_request_create_send_success_message_dialog">แจ้งซ่อมเรียบร้อย ขั้นตอนต่อไป นิติจะโทรติดต่อท่าน เพื่อทำการนัดหมายเวลา</string>
+    <string name="job_request_create_send_success_message_dialog_accept">ตกลง</string>
+    <string name="job_request_create_appointment_date">วันนัดหมาย</string>
+    <string name="date">วันที่</string>
+    <string name="time">เวลา</string>
+    <string name="job_request_create_priority">ความสำคัญ</string>
+    <string name="job_request_create_priority_spinner_default">กรุณาเลือก ความสำคัญ</string>
+    <string name="job_request_create_area">ประเภทงาน</string>
+    <string name="job_request_create_area_spinner_default">กรุณาเลือก ประเภทงาน</string>
+    <string name="job_request_create_system">ระบบงาน</string>
+    <string name="job_request_create_system_spinner_default">กรุณาเลือก ระบบงาน</string>
+    <string name="job_request_create_status">สถานะ</string>
+    <string name="job_request_create_status_spinner_default">กรุณาเลือก สถานะ</string>
+
+    <!-- JobRequestList -->
+    <string name="job_request_list_toolbar_title">แจ้งซ่อม</string>
+    <string name="job_request_list_toolbar_tab_waiting_approve">รอปิดงาน</string>
+    <string name="job_request_list_toolbar_tab_all">ทั้งหมด</string>
+
+    <!-- JobRequestDetail -->
+    <string name="job_request_detail_title">ซ่อมบำรุง</string>
+    <string name="job_request_detail_toolbar_tab_detail">รายละเอียด</string>
+    <string name="job_request_detail_toolbar_tab_status">สถานะ</string>
+    <string name="job_request_detail_toolbar_tab_report">ผู้รับผิดชอบ</string>
+    <string name="job_request_detail_job_title">ชื่อเรื่อง</string>
+    <string name="job_request_detail_technician">ช่างผู้รับผิดชอบ</string>
+    <string name="job_request_detail_technician_job_status">ผลการปฏิบัติงาน</string>
+    <string name="job_request_detail_technician_job_status_success">เรียบร้อย</string>
+    <string name="job_request_detail_technician_job_status_fail">แก้ไขไม่ได้</string>
+    <string name="job_request_detail_technician_user_comment">ข้อเสนอแนะจากลูกบ้าน</string>
+    <string name="job_request_detail_technician_btn_submit">ยืนยันผลการปฏิบัติงาน</string>
+    <string name="job_request_detail_technician_btn_submit_success_dialog">ขอบคุณสำหรับข้อเสนอแนะ เราจะนำข้อคิดเห็นของท่านไปปรับปรุง เพื่อพัฒนาบริการของเรา</string>
+    <string name="job_request_detail_technician_job_done">ปิดงาน</string>
+    <string name="job_request_detail_transaction_status_open_title">คำร้องถูกส่ง</string>
+    <string name="job_request_detail_transaction_status_job_assign_title">สถานะการนัดหมาย</string>
+    <string name="job_request_detail_transaction_status_job_done_title">สถานะการทำงาน</string>
+    <string name="job_request_detail_transaction_status_job_close_title">ปิดเคส</string>
+    <string name="job_request_detail_technician_comment_title">ผลการปฏิบัติงาน</string>
+    <string name="job_request_detail_technician_job_detail">ข้อมูลจากช่าง</string>
+    <string name="job_request_detail_btn_job_assign">มอบหมายงานให้ช่าง</string>
+    <string name="job_request_detail_btn_job_edit">EDIT</string>
+
+    <!-- JobAssignment -->
+    <string name="job_assignment_toolbar_title">มอบหมายงานให้ช่าง</string>
+    <string name="job_assignment_admin_appointment_date">ยืนยัน วันนัดหมาย</string>
+    <string name="job_assignment_technician">มอบหมายงานให้ช่าง</string>
+    <string name="job_assignment_technician_spinner_default">กรุณาเลือก ช่าง</string>
+    <string name="job_assignment_btn_submit">UPDATE</string>
+    <string name="job_assignment_dialog_title">มอบหมายงาน</string>
+    <string name="job_assignment_dialog_content">มอบหมายงาน เรียบร้อย</string>
+    <string name="job_assignment_dialog_accept">ตกลง</string>
+
+    <!-- Parcel -->
+    <string name="parcel_title">พัสดุ</string>
+    <string name="parcel_shipped_by">จัดส่งโดย %1$s</string>
+    <string name="parcel_information_show_code">รหัสรับพัสดุ</string>
+    <string name="parcel_detail_status">สถานะ : %1$s</string>
+    <string name="parcel_note">รายละเอียด : %1$s</string>
+    <string name="parcel_detail_status_waiting_receive">รอรับ</string>
+    <string name="parcel_detail_status_received">รับแล้ว</string>
+    <string name="parcel_information_go_to_guide">กดดูขั้นตอนการรับพัสดุ</string>
+
+    <!-- Parcel Guide -->
+    <string name="parcel_guide_title">ขั้นตอนการรับพัสดุ</string>
+    <string name="parcel_guide_next">ต่อไป</string>
+    <string name="parcel_guide_previous">ย้อนกลับ</string>
+    <string name="parcel_guide_finish">เสร็จสิ้น</string>
+    <string name="parcel_guide_1_information_label">1. รับพัสดุของคุณที่สำนักงานนิติ</string>
+    <string name="parcel_guide_1_information_detail">คุณสามารถรับพัสดุได้ที่สำนักงานนิติบุคคล ตั้งแต่เวลา 09:00 &#8211; 18:00 ทุกวัน</string>
+    <string name="parcel_guide_2_information_label">2. แสดงรหัสพัสดุให้เจ้าหน้าที่</string>
+    <string name="parcel_guide_2_information_detail">นิติบุคคลจะใช้รหัสนี้ในการค้นหาพัสดุของคุณ</string>
+    <string name="parcel_guide_3_information_label">3. ตรวจสอบและรับพัสดุของคุณ</string>
+    <string name="parcel_guide_3_information_detail">ตรวจสอบว่าเป็นพัสดุของคุณก่อนรับพัสดุออกไปนอกห้องนิติบุคคล</string>
+    <string name="parcel_guide_your_parcel_no">รหัสพัสดุของคุณ</string>
+
+    <!-- Parcel Register -->
+    <string name="parcel_register_toolbar_title">เพิ่มพัสดุ</string>
+    <string name="parcel_register_room_no">เลขห้อง</string>
+    <string name="parcel_register_receiver_name">ชื่อผู้รับ</string>
+    <string name="parcel_register_provider_name">ผู้ให้บริการจัดส่ง</string>
+    <string name="parcel_register_provider_name_default">กรุณาเลือก ผู้ให้บริการจัดส่ง</string>
+    <string name="parcel_register_sender_name">ชื่อผู้ส่ง</string>
+    <string name="parcel_register_type">ประเภท</string>
+    <string name="parcel_register_type_default">กรุณาเลือก ประเภท</string>
+    <string name="parcel_register_note">Note</string>
+    <string name="parcel_register_dialog_contents">เพิ่มพัสดุ สำเร็จ</string>
+    <string name="parcel_register_dialog_accept">ตกลง</string>
+
+    <!-- Parcel Checkout -->
+    <string name="parcel_checkout_toolbar_title">แจ้งรับพัสดุ</string>
+    <string name="parcel_checkout_code">รหัสพัสดุ</string>
+    <string name="parcel_checkout_name">ผู้รับ</string>
+    <string name="parcel_checkout_submit">ยืนยันการรับพัสดุ</string>
+    <string name="parcel_checkout_dialog_contents">การรับพัสดุ สำเร็จ</string>
+    <string name="parcel_checkout_dialog_accept">ตกลง</string>
+
+    <!-- Message -->
+    <string name="message_title">ข้อความ</string>
+    <string name="message_item_replied">ตอบกลับแล้ว</string>
+    <string name="message_item_waiting_reply">รอตอบกลับ</string>
+
+    <!-- Message Create -->
+    <string name="message_create_toolbar_title">กรุณากรอกข้อมูลที่ต้องการติดต่อ</string>
+    <string name="message_create_job_title">ชื่อเรื่อง</string>
+    <string name="message_create_job_detail">รายละเอียด</string>
+    <string name="message_create_contact_name">ชื่อผู้ติดต่อ</string>
+    <string name="message_create_contact_tel_no">เบอร์ติดต่อ</string>
+    <string name="message_create_contact_room_no">เลขห้อง</string>
+    <string name="message_create_send_button">ส่งข้อความติดต่อ</string>
+    <string name="message_create_send_success_message_dialog">ส่งข้อความเรียบร้อย นิติบุคคลจะตอบกลับทาง Inbox ใน Application ของท่านภายใน 24 ชั่วโมง ขอบคุณค่ะ</string>
+    <string name="message_create_send_success_message_dialog_accept">ตกลง</string>
+
+    <!-- Message Detail -->
+    <string name="message_detail_subject">เรื่อง %1$s</string>
+    <string name="message_detail_from">จาก ห้อง %1$s คุณ %2$s</string>
+    <string name="message_detail_to">ถึง %1$s</string>
+    <string name="message_detail_reply">ข้อความตอบกลับ</string>
+    <string name="message_detail_reply_subject">เรื่อง %1$s</string>
+    <string name="legal_entity">นิติบุคคล</string>
+    <string name="message_detail_reply_from_legal">จาก นิติบุคคล</string>
+    <string name="message_detail_reply_to_user">ถึง %1$s คุณ %2$s</string>
+    <string name="reply">ตอบกลับลูกบ้าน</string>
+
+    <!-- JobAccept -->
+    <string name="job_accept_dialog_title">รับงาน</string>
+    <string name="job_accept_dialog_content">รับงาน เรียบร้อย</string>
+    <string name="job_accept_dialog_accept">ตกลง</string>
+
+    <!-- TakeActionResult -->
+    <string name="take_action_result_toolbar_title">รายงานผลการซ่อม</string>
+    <string name="take_action_result_action_picture">รูปจากช่าง</string>
+    <string name="take_action_result_action_detail">ข้อมูลจากช่าง</string>
+    <string name="take_action_result_btn_submit">ส่งรายงาน</string>
+    <string name="take_action_result_content">ส่งรายงาน เรียบร้อย</string>
+    <string name="take_action_result_accept">ตกลง</string>
+    <string name="take_action_result_is_complete">ผลการดำเนินการ</string>
+    <string name="take_action_result_is_complete_true">เสร็จเรียบร้อย</string>
+    <string name="take_action_result_is_complete_false">ยังไม่เรียบร้อย</string>
+    <string name="take_action_result_is_finish_job">การปิดงาน</string>
+    <string name="take_action_result_is_finish_job_true">ขอปิดงาน</string>
+    <string name="take_action_result_is_finish_job_false">ยังไม่ขอปิดงาน</string>
+
+    <!-- Message Reply -->
+    <string name="message_reply_toolbar_title">ตอบกลับลูกบ้าน</string>
+    <string name="message_reply_from">จาก %1$s</string>
+    <string name="message_reply_to">ตอบกลับ ห้อง %1$s คุณ %2$s</string>
+    <string name="message_reply_subject">ตอบกลับเรื่อง</string>
+    <string name="message_reply_detail">เขียนข้อความตอบกลับ</string>
+    <string name="message_reply_btn_send_reply">ส่งข้อความตอบกลับ</string>
+    <string name="message_reply_dialog_title">ตอบกลับลูกบ้าน</string>
+    <string name="message_reply_dialog_content">ตอบกลับลูกบ้าน เรียบร้อย</string>
+    <string name="message_reply_dialog_accept">ตกลง</string>
+
+    <!-- Billing -->
+    <string name="billing_list">ใบแจ้งหนี้</string>
+    <string name="month">เดือน</string>
+    <string name="month_spinner_default">กรุณาเลือก เดือน</string>
+    <string name="year">ปี</string>
+    <string name="year_spinner_default">กรุณาเลือก ปี</string>
+    <string name="period">งวดที่ %1$s</string>
+    <string name="search">ค้นหา</string>
+    <string name="billing_room_list">รายการห้องพักเพื่อจดมิเตอร์น้ำ</string>
+    <string name="building">อาคาร</string>
+    <string name="building_spinner_default">กรุณาเลือก อาคาร</string>
+    <string name="floor">ชั้น</string>
+    <string name="floor_spinner_default">กรุณาเลือก ชั้น</string>
+    <string name="room_name">ห้อง : %1$s</string>
+    <string name="meter_no">เลขมิเตอร์ : %1$s</string>
+    <string name="save_meter_title">จดเลขมิเตอร์</string>
+    <string name="meter_no_hint">กรอกเลขมิเตอร์</string>
+    <string name="save_meter_btn">บันทึกเลขมิเตอร์</string>
+
+    <!-- Billing Detail -->
+    <string name="billing_toolbar_title">แจ้งชำระค่าบริการ</string>
+    <string name="billing_water">ค่าน้ำ</string>
+    <string name="billing_central">ค่าส่วนกลาง</string>
+    <string name="billing_due_date">กำหนดชำระ %1$s</string>
+    <string name="billing_bill_no">เลขใบแจ้งหนี้ %1$s</string>
+    <string name="billing_period">รอบบิล %1$s - %2$s</string>
+    <string name="billing_meter_no_before">เลขมิเตอร์ ก่อน</string>
+    <string name="billing_meter_no_after">เลขมิเตอร์ หลัง</string>
+    <string name="billing_water_unit_total">ใช้น้ำทั้งหมด</string>
+    <string name="billing_water_unit">%1$s หน่วย</string>
+    <string name="billing_price_per_unit">ราคาต่อหน่วย</string>
+    <string name="billing_price_total">คิดเป็นเงิน</string>
+    <string name="billing_central_unit_total">จำนวนหน่วย</string>
+    <string name="billing_status_owe">ค้างชำระ</string>
+    <string name="billing_status_paid">ชำระแล้ว</string>
+    <string name="billing_status_billed">ออกใบเสร็จรับเงินแล้ว</string>
+    <string name="billing_status">สถานะ %1$s</string>
+    <string name="billing_paid_btn">แจ้งชำระเงิน %1$s บาท</string>
+    <string name="price_baht">%1$s บาท</string>
+    <string name="billing_payment_upload_image">อัพโหลดภาพใบเสร็จ</string>
+    <string name="payment_inform_dialog_content">แจ้งชำระเงิน เรียบร้อย</string>
+    <string name="payment_inform_dialog_accept">ตกลง</string>
+    <string name="billing_price_per_sqm">ราคาต่อตารางเมตร</string>
+    <string name="room_area">พื้นที่ห้อง</string>
+    <string name="billing_central_sqm">%1$s ตารางเมตร</string>
+
+    <!-- Settings -->
+    <string name="settings_language_title">เลือกภาษา</string>
+    <string name="settings_language_option_default">Default (Auto)</string>
+    <string name="settings_language_option_th">ไทย</string>
+    <string name="settings_language_option_en">English</string>
+    <string name="settings_submit_btn">ยืนยันการตั้งค่า</string>
+    <string name="settings_submit_btn_confirm_dialog_title">ยืนยันการตั้งค่า</string>
+    <string name="settings_submit_btn_confirm_dialog_accept">ตกลง</string>
+    <string name="settings_submit_btn_confirm_dialog_cancel">ยกเลิก</string>
+
+    <!-- Change Room -->
+    <string name="change_room_dialog_confirm_content">คุณต้องการที่จะเปลี่ยนห้องหรือไม่</string>
+    <string name="change_room_dialog_confirm_accept">ตกลง</string>
+    <string name="change_room_dialog_confirm_cancel">ยกเลิก</string>
+    <string name="change_room_dialog_success_content">เปลี่ยนห้อง สำเร็จ</string>
+
+    <!-- Room Search -->
+    <string name="room_search_toolbar_title">ค้นหาห้องพัก</string>
+    <string name="room_search_search_by_room_no">ค้นหาจากเลขห้อง</string>
+
+    <!-- Dashboard Search -->
+    <string name="dashboard_search_toolbar_title">ค้นหา</string>
+    <string name="dashboard_search_by_text">ค้นหาจาก Dashboard</string>
+
+    <!-- Forget Password -->
+    <string name="forget_password">ลืมรหัสผ่าน</string>
+    <string name="forget_password_desc">กรุณาระบุอีเมลที่สมัครสมาชิกไว้ เพื่อตั้งรหัสผ่านใหม่</string>
+    <string name="forget_password_btn_submit">ตกลง</string>
+    <string name="forget_password_dialog_content">อีเมล Reset Password ได้ถูกส่งไปที่ %1$s</string>
+    <string name="forget_password_dialog_accept">ตกลง</string>
+
+    <string name="empty_message_job_request">ไม่พบข้อมูล</string>
+    <string name="register_title_old_password">รหัสผ่านเก่า</string>
+    <string name="register_title_new_password">รหัสผ่านใหม่</string>
+    <string name="register_title_confirmation_password">ยืนยันรหัสผ่าน</string>
+
+</resources>

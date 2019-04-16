@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    tools:context=".admin.screens.parcel.checkout.ParcelCheckoutActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            app:layout_collapseMode="pin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/parcel_checkout_toolbar_title"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="30dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/layout_loading_overlay" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/image_view_parcel_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="160dp"
+                android:maxHeight="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                fresco:placeholderImage="@drawable/ic_info_outline_black_24dp"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="@string/parcel_checkout_code" />
+
+                    <TextView
+                        android:id="@+id/text_view_parcel_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="6dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="@string/parcel_register_room_no"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/text_view_room_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_button_round_corner_grey_bg_grey"
+                        android:textColor="@color/black"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textSize="16sp"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="3" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="@string/parcel_register_receiver_name"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/text_view_receiver_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_button_round_corner_grey_bg_grey"
+                        android:textColor="@color/black"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textSize="16sp"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="3" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/Separator.Grey"
+                    android:layout_marginBottom="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="@string/parcel_register_provider_name"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/text_view_parcel_provider_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_button_round_corner_grey_bg_grey"
+                        android:textColor="@color/black"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textSize="16sp"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="3" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="@string/parcel_register_sender_name"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/text_view_sender_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_button_round_corner_grey_bg_grey"
+                        android:textColor="@color/black"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textSize="16sp"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="3" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/Separator.Grey"
+                    android:layout_marginBottom="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_marginBottom="24dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="@string/parcel_register_type"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/text_view_parcel_type_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_button_round_corner_grey_bg_grey"
+                        android:textColor="@color/black"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textSize="16sp"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="3" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="@string/parcel_register_note" />
+
+                    <TextView
+                        android:id="@+id/text_view_parcel_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_button_round_corner_grey_bg_grey"
+                        android:textColor="@color/black"
+                        android:lines="5"
+                        android:gravity="top|start"
+                        android:scrollHorizontally="false"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:textSize="16sp"
+                        android:layout_marginTop="6dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="24dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="@string/parcel_checkout_name"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical" />
+
+                    <EditText
+                        android:id="@+id/edit_text_parcel_checkout_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_button_round_corner_orange_bg_white"
+                        android:textColor="@color/black"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textSize="16sp"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="3" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_message_images_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp"
+                    android:weightSum="3"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/relative_layout_selected_image1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_button_round_corner_orange_bg_white"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/image_view_selected_image1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:placeholderImage="@drawable/ic_camera_grey"
+                            app:placeholderImageScaleType="center"
+                            fresco:roundedCornerRadius="8dp" />
+
+                        <ImageView
+                            android:id="@+id/image_view_delete_image1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_cancel_white"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:visibility="gone"
+                            android:padding="10dp"
+                            android:background="@drawable/shape_round_circle_red" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:visibility="visible"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="40dp">
+
+                    <Button
+                        android:id="@+id/btn_submit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/parcel_checkout_submit"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/shape_button_round_corner_red_bg_red" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

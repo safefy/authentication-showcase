@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/line1"></group>
+    <group android:id="@+id/line2">
+        <item
+            android:id="@+id/nav_item_dashboard"
+            android:icon="@drawable/ic_home"
+            android:title="@string/navigation_drawer_dashboard" />
+    </group>
+
+    <group android:id="@+id/line3">
+        <item
+            android:id="@+id/nav_item_profile"
+            android:icon="@drawable/ic_profile_red"
+            android:title="@string/navigation_drawer_profile" />
+    </group>
+</menu>

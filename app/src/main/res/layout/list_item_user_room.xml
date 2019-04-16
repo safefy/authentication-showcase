@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@+id/card_view_list_item_dashboard"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:elevation="2dp"
+    android:background="@color/white"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_list_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="?selectableItemBackground"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/image_view_icon"
+            android:layout_width="@dimen/dashboard_icon_size_w"
+            android:layout_height="@dimen/dashboard_icon_size_h"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_home_white"
+            android:background="@drawable/shape_round_circle_red"
+            android:padding="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="6"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_information_container"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="5"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/text_view_room_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/black"
+                    tool:text="Room No" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
